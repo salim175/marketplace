@@ -3,7 +3,8 @@
 LibanCoin est une application full-stack composée de deux parties :
 
 - un **backend** Node.js
-- un **frontend** client
+- un **frontend** React.js
+- **base de données** MongoDB
 
 ## Prérequis
 
