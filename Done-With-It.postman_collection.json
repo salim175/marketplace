@@ -1,0 +1,653 @@
+{
+	"info": {
+		"_postman_id": "020b49e6-ff75-465a-bd2b-f5b031438a0b",
+		"name": "Done-With-It",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Admin Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"Mohamadmaad5456@outlook.com\",\r\n    \"password\":\"mmm123mmm1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2000/api/admin/autAdmin",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"api",
+								"admin",
+								"autAdmin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "General",
+					"item": [
+						{
+							"name": "Add new user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"salim kahoul\",\r\n    \"email\":\"salimkahoul115@gmail.com\",\r\n    \"phoneNumber\":\"76780754\",\r\n    \"address\":\"maabour hay l hmeri kahoul building third floor\",\r\n    \"dateOfBirth\":\"10-10-2000\",\r\n    \"password\":\"mmm123mmm1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2000/api/user/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"user",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"salim.ahmadkahoul@gmail.com\",\r\n    \"password\":\"test12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2000/api/user/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"user",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Get all users",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MTBhYThlOTA0MjEyNjBmNzg3ODEiLCJuYW1lIjoiTW9oYW1hZE1hYWQiLCJwaG9uZU51bWJlciI6IjgxNzIxMzgzIiwiZW1haWwiOiJtb2hhbWFkbWFhZDU0NTZAb3V0bG9vay5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NDQ2OTcwMjh9.dGQ7EBamRWFL40wnw5eYIVn_Xdizsw5O-DpvAGOlId8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:2000/api/user/1",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"user",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get user by id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MTBhYThlOTA0MjEyNjBmNzg3ODEiLCJuYW1lIjoiTW9oYW1hZE1hYWQiLCJwaG9uZU51bWJlciI6IjgxNzIxMzgzIiwiZW1haWwiOiJtb2hhbWFkbWFhZDU0NTZAb3V0bG9vay5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NDQ2OTcwMjh9.dGQ7EBamRWFL40wnw5eYIVn_Xdizsw5O-DpvAGOlId8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:2000/api/user/getUserById/620813eaa2a7c347e450f413",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"user",
+										"getUserById",
+										"620813eaa2a7c347e450f413"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search for user",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MTBhYThlOTA0MjEyNjBmNzg3ODEiLCJuYW1lIjoiTW9oYW1hZE1hYWQiLCJwaG9uZU51bWJlciI6IjgxNzIxMzgzIiwiZW1haWwiOiJtb2hhbWFkbWFhZDU0NTZAb3V0bG9vay5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NDQ2OTcwMjh9.dGQ7EBamRWFL40wnw5eYIVn_Xdizsw5O-DpvAGOlId8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:2000/api/user/searchForUser/1/salim",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"user",
+										"searchForUser",
+										"1",
+										"salim"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit user info",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MTBhYThlOTA0MjEyNjBmNzg3ODEiLCJuYW1lIjoiTW9oYW1hZE1hYWQiLCJwaG9uZU51bWJlciI6IjgxNzIxMzgzIiwiZW1haWwiOiJtb2hhbWFkbWFhZDU0NTZAb3V0bG9vay5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NDQ2OTcwMjh9.dGQ7EBamRWFL40wnw5eYIVn_Xdizsw5O-DpvAGOlId8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"salim.ahmadkahoul@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:2000/api/user/620813eaa2a7c347e450f413",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"user",
+										"620813eaa2a7c347e450f413"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete user",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MTBhYThlOTA0MjEyNjBmNzg3ODEiLCJuYW1lIjoiTW9oYW1hZE1hYWQiLCJwaG9uZU51bWJlciI6IjgxNzIxMzgzIiwiZW1haWwiOiJtb2hhbWFkbWFhZDU0NTZAb3V0bG9vay5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NDQ2OTcwMjh9.dGQ7EBamRWFL40wnw5eYIVn_Xdizsw5O-DpvAGOlId8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:2000/api/user/620813eaa2a7c347e450f413",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"user",
+										"620813eaa2a7c347e450f413"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "Get my info",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MThkMzU0NDM0ODQ2NDhjM2M2OGIiLCJwaG9uZU51bWJlciI6Ijc2NzgwNzU0IiwiZW1haWwiOiJzYWxpbWthaG91bDExNUBnbWFpbC5jb20iLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjQ0Njk3ODI0fQ.siAAr_fsedv1882aVlGNIc_xE7UH8aeetdhsuB6qeEQ",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:2000/api/user/",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"user",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update my info",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MThkMzU0NDM0ODQ2NDhjM2M2OGIiLCJwaG9uZU51bWJlciI6Ijc2NzgwNzU0IiwiZW1haWwiOiJzYWxpbWthaG91bDExNUBnbWFpbC5jb20iLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjQ0Njk3ODI0fQ.siAAr_fsedv1882aVlGNIc_xE7UH8aeetdhsuB6qeEQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\":\"test12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:2000/api/user/",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"user",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete user",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MThkMzU0NDM0ODQ2NDhjM2M2OGIiLCJwaG9uZU51bWJlciI6Ijc2NzgwNzU0IiwiZW1haWwiOiJzYWxpbS5haG1hZGthaG91bEBnbWFpbC5jb20iLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjQ0Njk4MjUwfQ.RpO3VtICmWxdwA-Eov7szp5-a7wbsRiwJLqMfQx9rA0",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:2000/api/user/",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"user",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Admin functions",
+					"item": [
+						{
+							"name": "Add category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MTBhYThlOTA0MjEyNjBmNzg3ODEiLCJuYW1lIjoiTW9oYW1hZE1hYWQiLCJwaG9uZU51bWJlciI6IjgxNzIxMzgzIiwiZW1haWwiOiJtb2hhbWFkbWFhZDU0NTZAb3V0bG9vay5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NDQ3NzM5NDZ9.GL9qM7yGhkLdqCal0eE78qpWmi5uSSALJgrGjQmiejo",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Cars\",\r\n    \"description\": \"In this category you will find every thing relateg to cars\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:2000/api/category/",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"category",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit category",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MTBhYThlOTA0MjEyNjBmNzg3ODEiLCJuYW1lIjoiTW9oYW1hZE1hYWQiLCJwaG9uZU51bWJlciI6IjgxNzIxMzgzIiwiZW1haWwiOiJtb2hhbWFkbWFhZDU0NTZAb3V0bG9vay5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NDQ3NzQ1NzB9.WreivztWEZzAvYA1M651tFuTziKbAjXMo8rq9XABt94",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Cars\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:2000/api/category/620943114193c60aecbbedfb",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"category",
+										"620943114193c60aecbbedfb"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete category",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MTBhYThlOTA0MjEyNjBmNzg3ODEiLCJuYW1lIjoiTW9oYW1hZE1hYWQiLCJwaG9uZU51bWJlciI6IjgxNzIxMzgzIiwiZW1haWwiOiJtb2hhbWFkbWFhZDU0NTZAb3V0bG9vay5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NDQ3NzQ3MDV9.hJCV97QUVvE_PuZtZC9_0KOm3a0fPwUPDkBSllNT85s",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:2000/api/category/620943114193c60aecbbedfb",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"category",
+										"620943114193c60aecbbedfb"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "General",
+					"item": [
+						{
+							"name": "Get all categories",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:2000/api/category/",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"category",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get category by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:2000/api/category/620943114193c60aecbbedfb",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"category",
+										"620943114193c60aecbbedfb"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Currency",
+			"item": [
+				{
+					"name": "General",
+					"item": [
+						{
+							"name": "Get all currencies",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:2000/api/currency/",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"currency",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get currency by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:2000/api/currency/62094e1eb7afd24058f2c9f1",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"currency",
+										"62094e1eb7afd24058f2c9f1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Add currency",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MTBhYThlOTA0MjEyNjBmNzg3ODEiLCJuYW1lIjoiTW9oYW1hZE1hYWQiLCJwaG9uZU51bWJlciI6IjgxNzIxMzgzIiwiZW1haWwiOiJtb2hhbWFkbWFhZDU0NTZAb3V0bG9vay5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NDQ3NzY3MTV9.NXUjNHLNJA-vBPsDn7QT7kICYcoPHBYeRsgARl2LExo",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"united states dollar\",\r\n    \"abr\":\"usd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:2000/api/currency",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"currency"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit currency",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MTBhYThlOTA0MjEyNjBmNzg3ODEiLCJuYW1lIjoiTW9oYW1hZE1hYWQiLCJwaG9uZU51bWJlciI6IjgxNzIxMzgzIiwiZW1haWwiOiJtb2hhbWFkbWFhZDU0NTZAb3V0bG9vay5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NDQ3NzY3MTV9.NXUjNHLNJA-vBPsDn7QT7kICYcoPHBYeRsgARl2LExo",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"abr\":\"usd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:2000/api/currency/62094e1eb7afd24058f2c9f2",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"currency",
+										"62094e1eb7afd24058f2c9f2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete currency",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-auth",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjA4MTBhYThlOTA0MjEyNjBmNzg3ODEiLCJuYW1lIjoiTW9oYW1hZE1hYWQiLCJwaG9uZU51bWJlciI6IjgxNzIxMzgzIiwiZW1haWwiOiJtb2hhbWFkbWFhZDU0NTZAb3V0bG9vay5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NDQ3NzY3MTV9.NXUjNHLNJA-vBPsDn7QT7kICYcoPHBYeRsgARl2LExo",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:2000/api/currency/62094e1eb7afd24058f2c9f2",
+									"host": [
+										"localhost"
+									],
+									"port": "2000",
+									"path": [
+										"api",
+										"currency",
+										"62094e1eb7afd24058f2c9f2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

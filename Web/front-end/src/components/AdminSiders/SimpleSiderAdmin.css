@@ -1,0 +1,19 @@
+#simpleSider {
+    background-image: url('../../Images/Lebanon.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 135px;
+    margin-bottom: 2%;
+    text-align: center;
+    padding-top: 30px;
+    font-family: serif;
+}
+
+#signUpCol{
+    color: blue;
+}
+
+#signInCol{
+    color: blue;
+}

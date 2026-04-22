@@ -1,0 +1,4 @@
+{
+    "jwtKey": "LibanCoin_jwtPrivateKey",
+    "rootPass": "LibanCoin_rootPass"
+}

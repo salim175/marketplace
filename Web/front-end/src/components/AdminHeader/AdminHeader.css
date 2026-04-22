@@ -1,0 +1,36 @@
+/* #nav-signin{
+    color: white;
+    margin-left: 900px ;
+    padding: 6px;
+    background: #343a40;
+    border-radius: 5px;
+}
+
+#nav-signin:hover{
+    background-color: #23272b;
+} */
+
+.navbar-nav .dropdown {
+    top: 3px;
+}
+
+#nav-logout {
+    color: white;
+    margin-left: auto;
+    padding: 10px;
+    background: #343a40;
+    border-radius: 5px;
+}
+
+#nav-logout:hover{
+    background-color: #23272b;
+}
+
+
+/* .navbar-brand a {
+    font-family: serif;
+    font-style: italic;
+    font-size: 20pt;
+} */
+
+

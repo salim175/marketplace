@@ -1,0 +1,6 @@
+{
+    "name": "LibanCoin_development",
+    "mogodbURL": "mongodb://localhost:27017/LibanCoin",
+    "jwtKey": "",
+    "rootPass": ""
+}

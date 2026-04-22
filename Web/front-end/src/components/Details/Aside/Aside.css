@@ -1,0 +1,35 @@
+#btnContact {
+    padding: 6px;
+    margin-bottom: 45px;
+}
+
+#btnContact svg {
+    font-size: 17pt;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+#product-price-heading {
+    display: inline;
+    font-family: serif;
+    font-weight: bold;
+}
+
+#price-heading {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#edit-icon svg {
+    margin-bottom: 7px;
+    margin-left: 7%;
+    font-size: 15pt;
+}
+
+.product-details-seller {
+    text-align: center;
+}
+
+#signInClk{
+    color: blue;
+}
